@@ -84,4 +84,9 @@ mlflow server     --backend-store-uri postgresql+psycopg2://mlflow_user:mlflow_p
 
 ```
 
+make sure you have packaging-21.3 : 
+```
+pip install "packaging<22"
+```
+
 
