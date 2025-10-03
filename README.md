@@ -80,10 +80,8 @@ default-artifact-root = hdfs://<namenode_host>:9000/mlflow/artifacts
 
 # Start MLflow Tracking Server
 ```
-mlflow server \
-  --backend-store-uri postgresql://mlflowuser:mlflowpass@<db_host>:5432/mlflowdb \
-  --default-artifact-root hdfs://<namenode_host>:9000/mlflow/artifacts \
-  --host 0.0.0.0 --port 5000
+mlflow server     --backend-store-uri postgresql+psycopg2://mlflow_user:mlflow_password_2025@localhost:5432/mlflow_db     --default-artifact-root ./mlruns     --host 0.0.0.0 --port 5001
+
 ```
 
 
